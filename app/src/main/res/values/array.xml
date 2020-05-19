@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="medical_observation">
+        <item>无下列情况</item>
+        <item>居家观察</item>
+        <item>集中观察</item>
+        <item>解除医学观察</item>
+        <item>异常临床表现</item>
+        <item>被列为疑似病例</item>
+        <item>解除疑似病例</item>
+        <item>是确诊病例</item>
+        <item>确诊但已治愈</item>
+    </string-array>
+    <string-array name="daily_health">
+        <item>无不适</item>
+        <item>发烧</item>
+        <item>咳嗽</item>
+        <item>气促</item>
+        <item>乏力/肌肉酸痛</item>
+        <item>其它症状</item>
+    </string-array>
+    <string-array name="at_school">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+</resources>

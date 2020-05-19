@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当天是否在校"
+            android:labelFor="@+id/at_school"
+            tools:ignore="HardcodedText" />
+
+        <Spinner
+            android:id="@+id/at_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_border"
+            android:entries="@array/at_school" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当天所在地"
+            android:labelFor="@+id/log_user_location"
+            android:layout_marginTop="20dp"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/log_user_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="**省**市**县（区）"
+            android:importantForAutofill="no"
+            tools:ignore="HardcodedText,LabelFor" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="医学观察情况"
+            android:layout_marginTop="20dp"
+            android:labelFor="@+id/sp_medical_observation"
+            tools:ignore="HardcodedText" />
+        <Spinner
+            android:id="@+id/sp_medical_observation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:background="@drawable/spinner_border"
+            android:entries="@array/medical_observation"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当天健康情况"
+            android:layout_marginTop="20dp"
+            android:labelFor="@+id/log_user_location"
+            tools:ignore="HardcodedText" />
+        <Spinner
+            android:id="@+id/sp_daily_health"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:background="@drawable/spinner_border"
+            android:entries="@array/daily_health"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当天实测额温"
+            android:layout_marginTop="20dp"
+            android:labelFor="@+id/daily_temperature"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/daily_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="如果测量值为腋温，减0.5填报即可"
+            android:importantForAutofill="no"
+            tools:ignore="HardcodedText,LabelFor" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="症状、就诊及特殊情况说明"
+            android:layout_marginTop="20dp"
+            android:labelFor="@+id/describe"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="“无不适”情况可留空，其它情况请详细说明"
+            android:text=""
+            android:inputType="textMultiLine"
+            android:lines="4"
+            tools:ignore="Autofill,HardcodedText,LabelFor" />
+        <Button
+            android:id="@+id/health_detail_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/btn_submit_title"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:background="@drawable/button_pink_background"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

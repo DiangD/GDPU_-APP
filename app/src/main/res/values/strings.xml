@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">daka</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_student_number">请输入学号</string>
+    <string name="log_student_password">请输入密码</string>
+    <string name="log_user_title">学信系统账号</string>
+    <string name="btn_submit_title">验证并保存</string>
+    <string name="app_main_name">肥宅打卡</string>
+</resources>

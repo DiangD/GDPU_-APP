@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="150dp">
+
+    <TextView
+        android:id="@+id/log_user_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/log_user_title"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/log_user_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_user_title"
+        android:layout_marginTop="60dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/log_student_number"
+        android:importantForAutofill="no"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/log_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log_user_number"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:hint="@string/log_student_password"
+        android:importantForAutofill="no"
+        tools:ignore="TextFields" />
+    <Button
+        android:id="@+id/btn_log_user_save"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_user_password"
+        android:text="@string/btn_submit_title"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="@drawable/button_pink_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+</RelativeLayout>
